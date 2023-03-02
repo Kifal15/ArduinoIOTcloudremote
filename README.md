@@ -1,4 +1,4 @@
-###Esp32LocalHostLights
+# Esp32LocalHostLights
 This project allows you to control the lights on your ESP32 microcontroller using a remote cloud interface. It is accessible remotely through the Arduino IoT Cloud. The code is written in Arduino language and utilizes the ESP32 microcontroller, along with the Arduino IoT Cloud platform.
 
 Components
