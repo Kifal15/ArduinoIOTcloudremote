@@ -3,14 +3,14 @@
 This code allows you to control two LEDs connected to an ESP32 board using the Arduino IoT Cloud. You can turn on/off the LEDs using the switches provided on the IoT Cloud dashboard. The LEDs can also be controlled locally using a web browser on the local host.
 
 ## Table of Contents
-    Features
-    Getting Started
-    Prerequisites
-    Installation
-    Usage
-    Built With
-    License
-    Acknowledgments
+    - Features
+    - Getting Started
+    - Prerequisites
+    - Installation
+    - Usage
+    - Built With
+    - License
+    - Acknowledgments
 ## Features
     Control two LEDs using switches provided on the Arduino IoT Cloud dashboard
     Control the LEDs using a web browser on the local host
