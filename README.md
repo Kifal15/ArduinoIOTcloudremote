@@ -55,7 +55,8 @@ This code allows you to control two LEDs connected to an ESP32 board using the A
     Copy the certificate and paste it into the thingProperties.h file
     Open the web browser on your local host and navigate to http://<ESP32_IP_address>
     Turn on/off the LEDs using the switches on the IoT Cloud dashboard or the web browser
-    ![github](https://user-images.githubusercontent.com/88394912/222509921-5e6ee42c-1358-4b82-a086-b1a2212cc778.PNG)
+  
+  ![github](https://user-images.githubusercontent.com/88394912/222509921-5e6ee42c-1358-4b82-a086-b1a2212cc778.PNG)
 ## Built With
     Arduino IoT Cloud
     Arduino IDE
