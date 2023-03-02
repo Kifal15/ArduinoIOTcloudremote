@@ -1,27 +1,64 @@
-# Esp32LocalHostLights
-This project allows you to control the lights on your ESP32 microcontroller using a remote cloud interface. It is accessible remotely through the Arduino IoT Cloud. The code is written in Arduino language and utilizes the ESP32 microcontroller, along with the Arduino IoT Cloud platform.
+# Esp32RemoteAcess
 
-Components
-ESP32 Microcontroller
-The ESP32 microcontroller is a powerful, low-cost microcontroller that features built-in Wi-Fi and Bluetooth connectivity, making it ideal for Internet of Things (IoT) applications.
+This code allows you to control two LEDs connected to an ESP32 board using the Arduino IoT Cloud. You can turn on/off the LEDs using the switches provided on the IoT Cloud dashboard. The LEDs can also be controlled locally using a web browser on the local host.
 
-Arduino IoT Cloud
-Arduino IoT Cloud is a platform that allows you to connect your devices to the cloud and control them remotely. It provides a simple and secure way to manage your IoT projects and includes features like data logging, analytics, and notifications.
+## Table of Contents
+    Features
+    Getting Started
+    Prerequisites
+    Installation
+    Usage
+    Built With
+    License
+    Acknowledgments
+## Features
+    Control two LEDs using switches provided on the Arduino IoT Cloud dashboard
+    Control the LEDs using a web browser on the local host
+    Can be accessed remotely
+##  Getting Started
+    To get a local copy up and running follow these simple steps.
 
-thingProperties.h
-The `thingProperties.h` file is used to define the properties of the device that will be managed through the Arduino IoT Cloud. In this project, it defines the properties of the LED switches, which are controlled by the user interface.
-
-How it Works
-The `setup()` function initializes the ESP32 microcontroller and connects to the Arduino IoT Cloud. The loop() function continually updates the cloud connection and allows for additional code to be executed as desired.
-
-The `onLedSwitchChange()`, `onD3SwitchChange()`, and `onD4SwitchChange()` functions are called when the corresponding switches are changed on the user interface. They update the corresponding state variables and turn on or off the LED lights accordingly.
-
-The user interface can be accessed through a web browser on the local host or remotely through the Arduino IoT Cloud.
-
-Usage
-To use this code, simply upload it to your ESP32 microcontroller and connect it to the Arduino IoT Cloud. You can then access the user interface through a web browser on your local host or remotely through the Arduino IoT Cloud. From there, you can turn on and off the LED lights as desired.
-
-Please refer to the Arduino IoT Cloud documentation for more information on how to set up and use the cloud platform.
-
-Acknowledgements
-This project was inspired by the Arduino IoT Cloud Getting Started Guide.
+## Prerequisites
+    ESP32 board
+    Arduino IDE
+    Arduino IoT Cloud account
+## Installation
+    Clone the repo
+    sh
+    Copy code
+    git clone https://github.com/your_username_/Project-Name.git
+    Open the project in Arduino IDE
+## Install the required libraries:
+    ArduinoIoTCloud
+    WiFi
+    Upload the code to the ESP32 board
+## Running the code
+    Download and install the Arduino IDE from the official website.
+    Install the ESP32 board on the Arduino IDE. To do this, open the Arduino IDE and go to File > Preferences. In the Additional Boards Manager URLs field, add the    following URL: https://dl.espressif.com/dl/package_esp32_index.json. Then, go to Tools > Board > Boards Manager and search for "esp32". Install the board by clicking the "Install" button.
+    Download the required libraries by going to Sketch > Include Library > Manage Libraries. Search for and install the following libraries:
+    ArduinoIoTCloud
+    WiFiNINA
+    Open the "Esp32LocalHostLights" code in the Arduino IDE.
+    Connect your ESP32 board to your computer using a USB cable.
+    In the Arduino IDE, go to Tools > Port and select the port that corresponds to your ESP32 board.
+    Go to Tools > WiFi and enter your WiFi network SSID and password.
+    Upload the code to your ESP32 board by clicking the "Upload" button.
+    Once the code is uploaded, open the Serial Monitor by clicking the "Serial Monitor" button in the top right corner of the Arduino IDE.
+    The Serial Monitor will display the IP address of the ESP32 board. Copy this IP address and paste it into a web browser.
+    The web page will show a button that you can click to turn on/off the LED connected to pin D3 and another button to turn on/off the LED connected to pin D4.
+    You can also access the web page remotely by typing the IP address of the ESP32 board into a web browser on another device connected to the same WiFi network.
+## Usage
+    Log in to your Arduino IoT Cloud account
+    Create a new Thing and add two switches
+    Add the Thing ID and Thing Secret to the thingProperties.h file
+    Open the Serial Monitor in Arduino IDE to obtain the device certificate
+    Copy the certificate and paste it into the thingProperties.h file
+    Open the web browser on your local host and navigate to http://<ESP32_IP_address>
+    Turn on/off the LEDs using the switches on the IoT Cloud dashboard or the web browser
+## Built With
+    Arduino IoT Cloud
+    Arduino IDE
+    ESP32 board
+## License
+    Distributed under the MIT License. See LICENSE for more information.
+    
