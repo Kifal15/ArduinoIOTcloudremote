@@ -26,7 +26,7 @@ This code allows you to control two LEDs connected to an ESP32 board using the A
     Clone the repo
     sh
     Copy code
-    git clone https://github.com/your_username_/Project-Name.git
+    git clone https://github.com/Kifal15/ArduinoIOTcloudremote
     Open the project in Arduino IDE
 ## Install the required libraries:
     ArduinoIoTCloud
